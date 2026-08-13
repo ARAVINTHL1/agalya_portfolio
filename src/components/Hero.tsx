@@ -77,44 +77,52 @@ export function Hero({ onWorkClick, onConnectClick }: Props) {
 function HeroVisual() {
   return (
     <motion.div
-      className="panel-pop relative mx-auto aspect-[4/5] w-full max-w-[420px] overflow-hidden rounded-[2rem] border border-white/10 bg-slate-950 shadow-glow lg:max-w-[460px]"
+      className="panel-pop relative mx-auto aspect-[4/5] w-full max-w-[420px] rounded-[2rem] p-[2px] shadow-glow lg:max-w-[460px]"
       animate={{ y: [0, -10, 0] }}
       transition={{ duration: 8.5, repeat: Number.POSITIVE_INFINITY, ease: 'easeInOut' }}
     >
       <motion.div
-        className="absolute -left-10 top-8 h-28 w-28 rounded-full bg-rose-300/18 blur-3xl"
-        animate={{ opacity: [0.35, 0.7, 0.35], scale: [1, 1.08, 1] }}
-        transition={{ duration: 6, repeat: Number.POSITIVE_INFINITY, ease: 'easeInOut' }}
+        aria-hidden="true"
+        className="portrait-border absolute inset-0 rounded-[2rem]"
+        animate={{ rotate: 360 }}
+        transition={{ duration: 18, repeat: Number.POSITIVE_INFINITY, ease: 'linear' }}
       />
-      <motion.div
-        className="absolute -right-8 bottom-16 h-24 w-24 rounded-full bg-amber-200/10 blur-3xl"
-        animate={{ opacity: [0.25, 0.55, 0.25], scale: [1, 1.15, 1] }}
-        transition={{ duration: 7, repeat: Number.POSITIVE_INFINITY, ease: 'easeInOut', delay: 0.8 }}
-      />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(217,167,161,0.12),transparent_36%),linear-gradient(180deg,rgba(8,12,22,0.1),rgba(8,12,22,0.44))]" />
-      <img
-        src="/agalya.png"
-        alt="Portrait of Agalya Saravanan"
-        className="h-full w-full object-cover object-top"
-        loading="eager"
-        decoding="async"
-      />
-      <motion.div
-        className="absolute inset-0 border border-white/5"
-        animate={{ opacity: [0.4, 0.85, 0.4] }}
-        transition={{ duration: 5.5, repeat: Number.POSITIVE_INFINITY, ease: 'easeInOut' }}
-      />
-      <div className="absolute inset-x-0 bottom-0 h-40 bg-[linear-gradient(180deg,rgba(7,11,20,0),rgba(7,11,20,0.72))]" />
-      <motion.div
-        className="absolute bottom-4 left-4 right-4 rounded-[1.35rem] border border-white/10 bg-slate-950/55 px-4 py-3 backdrop-blur-xl"
-        initial={false}
-        animate={{ y: [0, -4, 0] }}
-        transition={{ duration: 5.8, repeat: Number.POSITIVE_INFINITY, ease: 'easeInOut' }}
-      >
-        <p className="text-xs uppercase tracking-[0.26em] text-slate-300">Profile</p>
-        <p className="mt-2 text-sm leading-6 text-slate-100">Agalya Saravanan</p>
-        <p className="text-xs text-slate-400">Software Developer • Frontend Developer • UI/UX Designer</p>
-      </motion.div>
+      <div className="relative h-full w-full overflow-hidden rounded-[calc(2rem-2px)] border border-white/10 bg-slate-950">
+        <motion.div
+          className="absolute -left-10 top-8 h-28 w-28 rounded-full bg-rose-300/18 blur-3xl"
+          animate={{ opacity: [0.35, 0.7, 0.35], scale: [1, 1.08, 1] }}
+          transition={{ duration: 6, repeat: Number.POSITIVE_INFINITY, ease: 'easeInOut' }}
+        />
+        <motion.div
+          className="absolute -right-8 bottom-16 h-24 w-24 rounded-full bg-amber-200/10 blur-3xl"
+          animate={{ opacity: [0.25, 0.55, 0.25], scale: [1, 1.15, 1] }}
+          transition={{ duration: 7, repeat: Number.POSITIVE_INFINITY, ease: 'easeInOut', delay: 0.8 }}
+        />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(217,167,161,0.12),transparent_36%),linear-gradient(180deg,rgba(8,12,22,0.1),rgba(8,12,22,0.44))]" />
+        <img
+          src="/agalya.png"
+          alt="Portrait of Agalya Saravanan"
+          className="h-full w-full object-cover object-top"
+          loading="eager"
+          decoding="async"
+        />
+        <motion.div
+          className="absolute inset-0 border border-white/5"
+          animate={{ opacity: [0.4, 0.85, 0.4] }}
+          transition={{ duration: 5.5, repeat: Number.POSITIVE_INFINITY, ease: 'easeInOut' }}
+        />
+        <div className="absolute inset-x-0 bottom-0 h-40 bg-[linear-gradient(180deg,rgba(7,11,20,0),rgba(7,11,20,0.72))]" />
+        <motion.div
+          className="absolute bottom-4 left-4 right-4 rounded-[1.35rem] border border-white/10 bg-slate-950/55 px-4 py-3 backdrop-blur-xl"
+          initial={false}
+          animate={{ y: [0, -4, 0] }}
+          transition={{ duration: 5.8, repeat: Number.POSITIVE_INFINITY, ease: 'easeInOut' }}
+        >
+          <p className="text-xs uppercase tracking-[0.26em] text-slate-300">Profile</p>
+          <p className="mt-2 text-sm leading-6 text-slate-100">Agalya Saravanan</p>
+          <p className="text-xs text-slate-400">Software Developer • Frontend Developer • UI/UX Designer</p>
+        </motion.div>
+      </div>
     </motion.div>
   );
 }

@@ -9,6 +9,7 @@ export function Achievements() {
     <section id="achievements" className="px-4 py-20 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <SectionHeading
+          chapter="Chapter 05"
           eyebrow="Achievements"
           title="Selected Recognition"
           description="Milestones that reflect participation, preparation, and the ability to present ideas in competitive settings."

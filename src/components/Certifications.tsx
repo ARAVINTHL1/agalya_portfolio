@@ -9,6 +9,7 @@ export function Certifications() {
     <section id="certifications" className="px-4 py-20 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <SectionHeading
+          chapter="Chapter 06"
           eyebrow="Certifications"
           title="Certifications"
           description="Certificates that can be expanded with links later without changing the component structure."

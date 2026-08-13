@@ -26,6 +26,7 @@ export function Projects() {
     <section id="projects" className="px-4 py-20 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <SectionHeading
+          chapter="Chapter 03"
           eyebrow="Projects"
           title="Selected Projects"
           description="Representative work spanning full stack development, mobile thinking, and concept-driven design."

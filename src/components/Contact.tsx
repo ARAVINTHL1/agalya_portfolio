@@ -61,6 +61,7 @@ export function Contact() {
     <section id="contact" className="px-4 py-20 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <SectionHeading
+          chapter="Chapter 08"
           eyebrow="Contact"
           title="Let's Build Something Together."
           description="Have a project idea, opportunity, or just want to connect? Feel free to reach out."

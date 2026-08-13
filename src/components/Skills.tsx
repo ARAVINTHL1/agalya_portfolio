@@ -9,8 +9,9 @@ export function Skills() {
     <section id="skills" className="px-4 py-20 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <SectionHeading
+          chapter="Chapter 02"
           eyebrow="Skills"
-          title="Interactive Skill Landscape"
+          title="Skills & Tools"
           description="A focused set of technical and creative tools grouped by how they support product thinking and implementation."
         />
 

@@ -9,6 +9,7 @@ export function Education() {
     <section id="education" className="px-4 py-20 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <SectionHeading
+          chapter="Chapter 07"
           eyebrow="Education"
           title="Academic Background"
           description="A straightforward snapshot of current and past education milestones."

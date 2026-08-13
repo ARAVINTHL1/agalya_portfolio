@@ -10,6 +10,7 @@ export function About() {
     <section id="about" className="px-4 py-20 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <SectionHeading
+          chapter="Chapter 01"
           eyebrow="About"
           title="About Me"
           description="I am a Computer Science Engineering student focused on building practical software solutions and intuitive digital experiences."

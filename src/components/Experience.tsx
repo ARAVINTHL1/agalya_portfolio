@@ -9,6 +9,7 @@ export function Experience() {
     <section id="experience" className="px-4 py-20 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <SectionHeading
+          chapter="Chapter 04"
           eyebrow="Experience"
           title="Experience & Activities"
           description="A concise timeline of internships, training, and student involvement that shaped the way I approach product work."
